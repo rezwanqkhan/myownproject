@@ -14,9 +14,9 @@
                         @foreach ($postChunk as $post)
                         
                         <div class="col-lg-4 mb-4">
-                            <div class="card-img-top" style="border-width: 10px; overflow: hidden; display: inline-block;">
+                            {{-- <div class="card-img-top" style="border-width: 10px; overflow: hidden; display: inline-block;">
                                 <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                            </div>
+                            </div> --}}
                             <div class="card mt-2">
                                 <div class="card-body">
                                     <h1 class="post-title">{{$post->title}}</h1>
