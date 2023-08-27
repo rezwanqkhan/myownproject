@@ -11,9 +11,6 @@ class AboutController extends Controller
    public function index(){
    
     return view('frontend.sections.about')
-    ->with('about', DB::table('abouts')->first());
-   }
-
-  
+    ->with('about', About::first());
    }
 }

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\backend;
 use App\Http\Controllers\Controller;
 use App\Models\Post;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Session;
+use Session;
 use Str;
 class PostController extends Controller
 {

@@ -31,7 +31,10 @@ Route::middleware('auth')->group(function() {
     Route::resource('post',PostController::class); 
     Route::get('admin/about',[AboutController::class,'index'])->name('about.index'); 
     //its for storing about data 
-    Route::post('admin/about',[AboutController::class,'store'])->name('store.index');    
+    Route::post('admin/about',[AboutController::class,'store'])->name('about.store');    
+
+
+
 });
 
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['auth']], function () {
