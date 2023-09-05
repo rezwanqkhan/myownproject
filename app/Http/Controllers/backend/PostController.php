@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers\backend;
-
 use App\Http\Controllers\Controller;
 use App\Models\Post;
 use Illuminate\Http\Request;
@@ -32,21 +30,41 @@ class PostController extends Controller
         return view('backend.post.create');
     }
 
+
+
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {        
-             // its for requiring to fill the giveing inputs
-            $request ->validate([
-            'title' => 'required|max:50',
-            'sub_title'=> 'required|max:50',
-            'description'=> 'required',
-            ]);
-            // adding data to the databes by create method
-            Post::create(['title'=>$request ->title,'sub_title'=>$request ->sub_title,'description'=>$request->description,'slug'=>Str::slug($request->title)]);
-             Session::flash('success','Creat successfully');
-            // back to main page of posts
+        // try{
+
+       
+        //      // its for requiring to fill the giveing inputs
+        //     $request ->validate([
+        //     'title' => 'required|max:50',
+        //     'sub_title'=> 'required|max:50',
+        //     'description'=> 'required',
+        //     ]);
+        //     // adding data to the databes by create method
+        //     Post::create(['title'=>$request ->title,'sub_title'=>$request ->sub_title,'description'=>$request->description,'slug'=>Str::slug($request->title)]);
+        //     return response()->json(['message' => 'Başarılı bir şekilde kaydedildi']); 
+        // } catch(\Exception $th){
+        //     return response()->json(['message' => 'Y']); 
+        // } 
+       
+            // its for requiring to fill the giveing inputs
+           $request ->validate([
+           'title' => 'required|max:50',
+           'sub_title'=> 'required|max:50',
+           'description'=> 'required',
+           ]);
+           // adding data to the databes by create method
+           Post::create(['title'=>$request ->title,'sub_title'=>$request ->sub_title,'description'=>$request->description,'slug'=>Str::slug($request->title)]);
+           
+             
+            Session::flash('success','Creat successfully');
+           // back to main page of posts
             return redirect()->route('post.index');
     }
 

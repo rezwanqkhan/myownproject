@@ -37,6 +37,9 @@ Route::middleware('auth')->group(function() {
 
 });
 
+
+
+
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['auth']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
 

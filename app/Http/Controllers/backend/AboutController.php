@@ -1,21 +1,19 @@
 <?php
-
 namespace App\Http\Controllers\backend;
-
 use App\Http\Controllers\Controller;
 use App\Models\About;
 use  Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-
 class AboutController extends Controller
 {
    public function index(){
     return view('backend.about.index')
-           ->with('about',About::first());
+    ->with('about', About::first());
    }
-
+   
    public function store(Request $request){
+
       $request->validate([
         
          'Birthday'=>'required',
@@ -34,7 +32,7 @@ class AboutController extends Controller
          'description'=>$request->description,
       ]);
 
-      Session::flash('success','Creat successfully');
+     Session::flash('success','Creat successfully');
     return redirect()->back();
    }
 }
