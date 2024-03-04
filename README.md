@@ -21,7 +21,7 @@ For data management, PHPMyAdmin was used to handle the database. The following s
 
 ---
 
-## General view of the Admin planel of the blog
+## General view of the Admin panel of the blog
 
 <p align="center">
   <br>
