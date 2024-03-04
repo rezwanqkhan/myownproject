@@ -1,3 +1,87 @@
+# Personal Blog Web
+
+This is a personal blog web page developed using the Laravel framework with MVC architecture. It served as my first internet project. The platform enables the owner, who is the sole user, to control the site from the admin panel.
+
+The owner can update their profile details, add new posts, edit existing posts, and delete them. New posts can be published through the admin panel or backend, with changes reflected on the frontend.
+
+
+For the frontend design, I utilized HTML, CSS, JS, Bootstrap, and Bootstrap Starter, customizing them to suit the project's needs. In terms of the admin panel, I integrated JavaScript and PHP. The admin panel view was implemented from an online resource, then customized to align with the project's requirements.
+
+For data management, PHPMyAdmin was used to handle the database. The following screenshots were taken from a localhost environment during development.
+
+---
+
+## General view of the frontend of the blog
+
+<p align="center">
+  <br>
+  <img src="https://github.com/rezwanqkhan/myownproject/assets/91380892/fb67be80-aafc-4013-bd1c-0d3fb8892c7c" alt="Picture1">
+  <br>
+</p>
+
+---
+
+## General view of the Admin planel of the blog
+
+<p align="center">
+  <br>
+  <img src="https://github.com/rezwanqkhan/myownproject/assets/91380892/ebf1bd49-67b1-41c9-bbce-8a30d5512fab" alt="Picture1">
+  <br>
+</p>
+
+---
+| Create post | Edit post |
+|:--------------:|:--------------:|
+| ![Picture3](https://github.com/rezwanqkhan/myownproject/assets/91380892/e2415527-8fd9-485a-aa48-3918fa80319f) | ![Picture4](https://github.com/rezwanqkhan/myownproject/assets/91380892/623747d1-e394-45d6-9f1b-abbe36c4b70d) |
+
+---
+
+
+| Delete post | About Section|
+|:--------------:|:--------------:|
+|![Picture5](https://github.com/rezwanqkhan/myownproject/assets/91380892/6edaeb05-a031-43e1-b2c9-840c6e4ce519)|![Picture7](https://github.com/rezwanqkhan/myownproject/assets/91380892/60355b27-9048-442c-a554-dc88c54c7829) |
+
+
+---
+
+## Postes
+
+<p align="center">
+  <br>
+  <img src="https://github.com/rezwanqkhan/myownproject/assets/91380892/7e29abba-60ec-4eb1-b48a-e39bf36689db" alt="Picture1">
+  <br>
+</p>
+
+---
+
+## PHPMYADMIN
+
+<p align="center">
+  <br>
+  <img src="https://github.com/rezwanqkhan/myownproject/assets/91380892/8c21455e-1157-4df8-8eb4-a01c77da4b6c" alt="Picture1">
+  <br>
+</p>
+
+
+---
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
